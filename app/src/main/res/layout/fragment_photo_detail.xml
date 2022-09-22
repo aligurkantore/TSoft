@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="10dp"
+    tools:context=".ui.fragments.photodetail.PhotoDetailFragment">
+
+    <ImageView
+        android:id="@+id/imageDetails"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/likeDetailsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/like"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_star"
+        app:layout_constraintStart_toStartOf="@id/imageDetails"
+        app:layout_constraintTop_toBottomOf="@id/imageDetails" />
+
+    <TextView
+        android:id="@+id/commentDetailsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/comment"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/likeDetailsTv"
+        app:layout_constraintTop_toBottomOf="@id/imageDetails" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@color/black"
+        app:layout_constraintStart_toStartOf="@id/likeDetailsTv"
+        app:layout_constraintTop_toBottomOf="@id/likeDetailsTv" />
+
+    <TextView
+        android:id="@+id/user_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/user_name_default"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/userImage"
+        app:layout_constraintTop_toBottomOf="@id/likeDetailsTv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

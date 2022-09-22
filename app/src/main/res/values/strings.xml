@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TSoft</string>
+    <string name="like">2.37</string>
+    <string name="comment">(496 yorum)</string>
+    <string name="views">25K(görüntülenme)</string>
+    <string name="search_view">Ara</string>
+    <string name="user_name_default">Ali Gürkan TÖRE</string>
+    <string name="welcome_search">Arama Sayfasına Hoşgeldiniz!</string>
+    <string name="comment_new">(%d yorum)</string>
+    <string name="views_new">%dK(görüntülenme)</string>
+</resources>
